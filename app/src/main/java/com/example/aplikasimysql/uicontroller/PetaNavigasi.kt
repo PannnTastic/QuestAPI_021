@@ -13,6 +13,7 @@ import com.example.aplikasimysql.uicontroller.route.DestinasiEdit
 import com.example.aplikasimysql.uicontroller.route.DestinasiEntry
 import com.example.aplikasimysql.uicontroller.route.DestinasiHome
 import com.example.aplikasimysql.view.DetailSiswaScreen
+import com.example.aplikasimysql.view.EditSiswaScreen
 import com.example.aplikasimysql.view.EntrySiswaScreen
 import com.example.aplikasimysql.view.HomeScreen
 
@@ -50,7 +51,10 @@ fun HostNavigasi(
         composable(DestinasiEdit.routeWithArgs, arguments = listOf(navArgument(DestinasiEdit.itemIdArg
         ){
             type = NavType.IntType})) {
-
+            EditSiswaScreen(
+                navigateBack = { navController.navigate(DestinasiHome.route) },
+                onNavigateUp = { navController.navigateUp() }
+            )
         }
     }
 }
