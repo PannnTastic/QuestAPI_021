@@ -17,11 +17,11 @@ interface ServiceApiSiswa {
     suspend fun insertSiswa(@Body dataSiswa: DataSiswa): retrofit2.Response<Void>
 
     @GET("teman/{id}")
-    suspend fun getSatuSiswa(@Path("id") id: String): DataSiswa
+    suspend fun getSatuSiswa(@Path("id") id: Int): DataSiswa
 
     @PUT("teman/{id}")
-    suspend fun updateSiswa(@Path("id") id: String, @Body dataSiswa: DataSiswa): Response<Void>
+    suspend fun updateSiswa(@Path("id") id: Int, @Body dataSiswa: DataSiswa): Response<Void>
 
     @DELETE("teman/{id}")
-    suspend fun deleteSiswa(@Path("id") id: String): Response<Void>
+    suspend fun deleteSiswa(@Path("id") id: Int): Response<Void>
 }
