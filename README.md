@@ -25,6 +25,9 @@
 # Backend Response
 <img width="1088" height="280" alt="{11723984-63B0-41BB-9FEA-9FD6BAE5E081}" src="https://github.com/user-attachments/assets/42f7131a-f01c-4b80-8fb5-7077f34fea0f" />
 
+# Backend Response (Edit, Detail, Delete)
+<img width="1094" height="652" alt="{0460C7D8-96ED-453B-9D4B-EC6CB46C4C3B}" src="https://github.com/user-attachments/assets/16f40f14-a11c-4f2d-88f4-f41595235f03" />
+
 # Database
 <img width="454" height="156" alt="{D638BC7F-78B2-4DC7-AEA7-752EAD1DDFED}" src="https://github.com/user-attachments/assets/094b911a-b827-42e2-9eb1-7df09e8624ec" />
 
