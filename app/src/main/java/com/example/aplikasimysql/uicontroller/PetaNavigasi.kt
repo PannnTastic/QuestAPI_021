@@ -9,8 +9,10 @@ import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
 import androidx.navigation.navArgument
 import com.example.aplikasimysql.uicontroller.route.DestinasiDetail
+import com.example.aplikasimysql.uicontroller.route.DestinasiEdit
 import com.example.aplikasimysql.uicontroller.route.DestinasiEntry
 import com.example.aplikasimysql.uicontroller.route.DestinasiHome
+import com.example.aplikasimysql.view.DetailSiswaScreen
 import com.example.aplikasimysql.view.EntrySiswaScreen
 import com.example.aplikasimysql.view.HomeScreen
 
@@ -42,7 +44,8 @@ fun HostNavigasi(
         composable(DestinasiDetail.routeWithArgs, arguments = listOf(navArgument(DestinasiDetail.itemIdArg){
             type = NavType.IntType
         })){
-
+            DetailSiswaScreen(navigateToEditItem = {navController.navigate("${DestinasiEdit.route}/${it}")},
+                navigateBack = { navController.navigate(DestinasiHome.route) })
 
         }
     }
